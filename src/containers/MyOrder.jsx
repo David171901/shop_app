@@ -19,8 +19,8 @@ function MyOrder(){
 				<p className={styles.title}>My order</p>
 			</div>
 			<div className="my-order-content">
-				{state.cart.map((item)=>{
-					return <OrderItem key={'myorder-'+item.id} product={item}/>
+				{state.cart.map((item,index)=>{
+					return <OrderItem key={'myorder-'+index} product={item}/>
 				})}
 				<div className={styles.order}>
 					<p>

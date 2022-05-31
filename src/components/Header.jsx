@@ -1,8 +1,9 @@
 import React, { useState,useContext } from 'react';
-import {Menu} from './Menu';
-import {MyOrder} from '../containers/MyOrder';
+import { Menu } from './Menu';
+import { MyOrder } from '../containers/MyOrder';
 import styles from '../styles/Header.module.css'
 import { AppContext } from '../context/AppContext';
+import { Link } from 'react-router-dom';
 
 function Header(){
 
@@ -25,22 +26,13 @@ function Header(){
 				<img src="https://static.platzi.com/media/tmp/class-files/github/react-practico/react-practico-react-10/src/assets/logos/logo_yard_sale.svg" alt="logo" className={styles.logo}/>
 				<ul>
 					<li>
-						<a href="/">All</a>
+						<Link to="/shop_app">Home</Link>
 					</li>
 					<li>
-						<a href="/">Clothes</a>
+						<Link to="/login">Login</Link>
 					</li>
 					<li>
-						<a href="/">Electronics</a>
-					</li>
-					<li>
-						<a href="/">Furnitures</a>
-					</li>
-					<li>
-						<a href="/">Toys</a>
-					</li>
-					<li>
-						<a href="/">Others</a>
+						<Link to="/recovery-password">Recovery Password</Link>
 					</li>
 				</ul>
 			</div>

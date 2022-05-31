@@ -19,4 +19,4 @@ function ProductList (){
     );
 }
 
-export {ProductList }
+export {ProductList}
