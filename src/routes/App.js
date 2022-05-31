@@ -21,7 +21,7 @@ function App() {
       <BrowserRouter>
         <Layout>
             <Routes>
-              <Route path="/" element={<Home/>} />
+              <Route path="/shop_app" element={<Home/>} />
               <Route path="/login" element={<Login/>} />
               <Route path="/recovery-password" element={<RecoveryPassword/>}/>
               <Route path="/send-email" element={<SendEmail/>} />

@@ -1,16 +1,12 @@
 import styles from '../styles/ProductList.module.css';
 import {ProductItem} from '../components/ProductItem';
-import {productsData} from '../utils/data'
+import { useGetProducts } from '../hooks/useGetProducts';
 
-// import { useGetProducts } from '../hooks/useGetProducts';
-
-// const API = 'http://api.escuelajs.co/api/v1/products'
+const API = 'http://api.escuelajs.co/api/v1/products'
 
 function ProductList (){
 
-	// const products = useGetProducts(API)
-	
-	const products = productsData
+	const products = useGetProducts(API)
 
     return(
 		<section className="main-container">
