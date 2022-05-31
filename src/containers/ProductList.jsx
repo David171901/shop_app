@@ -2,7 +2,7 @@ import styles from '../styles/ProductList.module.css'
 import {ProductItem} from '../components/ProductItem';
 import { useGetProducts } from '../hooks/useGetProducts';
 
-const API = 'https://api.escuelajs.co/api/v1/products?limit=20&offset=1'
+const API = 'http://api.escuelajs.co/api/v1/products'
 
 function ProductList (){
 
