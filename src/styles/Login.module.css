@@ -18,7 +18,7 @@
     display: grid;
     place-items: center;
   }
-  .Login-container {
+  .Login_container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     width: 300px;
@@ -27,7 +27,6 @@
     width: 150px;
     margin-bottom: 48px;
     justify-self: center;
-    display: none;
   }
   .form {
     display: flex;

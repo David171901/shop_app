@@ -18,11 +18,17 @@
 	box-sizing: border-box;
 	position: absolute;
 	right: 0;
+	background: var(--white);
+	position: absolute;
+	top:60px;
+	border: #aba9a9 solid 1px;
+	border-radius: 10px;
+
 }
-.title-container {
+.title_container {
 	display: flex;
 }
-.title-container img {
+.title_container img {
 	transform: rotate(180deg);
 	margin-right: 14px;
 }

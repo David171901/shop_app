@@ -1,14 +1,25 @@
 import styles from '../styles/OrderItem.module.css'
+import { AppContext } from '../context/AppContext';
+import React, { useContext } from 'react';
 
-function OrderItem(){
+function OrderItem(props){
+
+	const {removeFromCart} = useContext(AppContext)
+
+	const handleRemove = item => {
+		removeFromCart(item)
+	}
+
     return(
 		<div className={styles.OrderItem}>
 			<figure>
-				<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
+				<img src={props.product.images[0]} alt={props.product.title} />
 			</figure>
-			<p>Bike</p>
-			<p>$30,00</p>
-			<img src="https://static.platzi.com/media/tmp/class-files/github/react-practico/react-practico-react-10/src/assets/icons/icon_close.png" alt="close" />
+			<p>{props.product.title}</p>
+			<p>$ {props.product.price}</p>
+			<img src="https://static.platzi.com/media/tmp/class-files/github/react-practico/react-practico-react-10/src/assets/icons/icon_close.png" 
+			alt="close"
+			onClick={()=> handleRemove(props.product)} />
 		</div>
     );
 }

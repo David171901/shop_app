@@ -18,7 +18,7 @@
     position: absolute;
     right: 0;
 }
-.ProductDetail-close {
+.ProductDetail_close {
     background: var(--white);
     width: 14px;
     height: 14px;
@@ -29,7 +29,7 @@
     padding: 12px;
     border-radius: 50%;
 }
-.ProductDetail-close:hover {
+.ProductDetail_close:hover {
     cursor: pointer;
 }
 .ProductDetail > img:nth-child(2) {

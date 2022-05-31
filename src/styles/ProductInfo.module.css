@@ -33,7 +33,7 @@ body {
 	margin-top: 0;
 	margin-bottom: 36px;
 }
-.primary-button {
+.primary_button {
 	background-color: var(--hospital-green);
 	border-radius: 8px;
 	border: none;
@@ -44,7 +44,7 @@ body {
 	font-weight: bold;
 	height: 50px;
 }
-.add-to-cart-button {
+.add_to_cart_button {
 	display: flex;
 	align-items: center;
 	justify-content: center;

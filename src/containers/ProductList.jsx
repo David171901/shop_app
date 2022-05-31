@@ -1,11 +1,19 @@
-import '../styles/productList.css'
+import styles from '../styles/ProductList.module.css'
 import {ProductItem} from '../components/ProductItem';
+import { useGetProducts } from '../hooks/useGetProducts';
+
+const API = 'https://api.escuelajs.co/api/v1/products?limit=20&offset=1'
 
 function ProductList (){
+
+	const products = useGetProducts(API)
+	
     return(
 		<section className="main-container">
-			<div className="ProductList">
-				<ProductItem />
+			<div className={styles.ProductList}>
+				{products.map((product)=>{
+					return <ProductItem key={product.id} product={product}/>
+				})}
 			</div>
 		</section>
     );
